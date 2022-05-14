@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+	<title>Login/Signup</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
 
-<form method="post" action="index.html">
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button class="btn signbtn">Sign up</button>
+				</form>
+			</div>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/login.css">
-
-    </head>
-
-    <body>
-        <!-- partial:index.partial.html -->
-        <div id="login-form-wrap">
-            <h2>Login</h2>
-            <form id="login-form">
-                <p>
-                    <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
-                </p>
-                <p>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
-                </p>
-                <p>
-                    <a href="index.html">
-                        <input type="submit" id="login" value="Login">
-                    </a>
-                </p>
-            </form>
-            <div id="create-account-wrap">
-                <p>Not a member? <a href="">Create Account</a>
-                    <p>
-            </div>
-        </div>
-
-    </body>
-
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button class="btn signbtn">Login</button>
+				</form>
+			</div>
+	</div>
+</body>
 </html>
